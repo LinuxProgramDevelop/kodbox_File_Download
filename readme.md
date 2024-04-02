@@ -4,7 +4,10 @@
 ### 使用简介
 > 使用前需要关闭kodbox的CSRF防护，要不然会到时CSRF认证不通过，无法爬取文件夹列表信息
 1. 打开main.py文件，将其中的`GetFile("./result/","{source:32}/")` 其中的32替换为你的kodbox下载的文件夹id，文件夹id通过浏览器抓包中的body的path中获取
-2. 直接运行脚本即可
+2. 使用浏览器中的cookie替换脚本中的cookie和csrf_token参数
+3. 下载一个示例文件，使用浏览器请求中的accessToken，main.py中的102行的accessToken参数
+4. 直接运行脚本即可
+![Alt text](image.png)
 
 ### kodbox在使用中的缺点
 > 我属于中度用户大概，巅峰期云盘存储大概200G数据，都采用oss存储，在使用中主要碰到以下问题，等待一年多更新都没有解决，遂切换至cloudreve
